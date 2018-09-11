@@ -1,7 +1,13 @@
 {
-  "name": "Portafolio_AmezagaAlejandra",
+  "name": "portafolio-amezagaalejandra",
   "version": "1.0.0",
   "description": "Portafolio de presentación",
   "main": "index.js",
-  "license": "MIT"
+  "repository": "https://github.com/AlejandraAAO/Portafolio-AlejandraAmezaga.git",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
 }

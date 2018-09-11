@@ -1,0 +1,67 @@
+
+nav {
+  background-color: #0f1a26;
+  border-style: none;
+  height: 100px;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5rem;
+}
+
+.logo {
+  margin-top: 3rem;
+}
+.init {
+ background-color: #0f1a26;
+ color: #fbf6f4;
+ font-family: "Montserrat" , sans-serif;
+ margin-bottom: 0rem;
+ border-bottom-style: dotted;
+}
+
+.second {
+ background-color: #fbf6f4;
+ font-family: "Montserrat" , sans-serif;
+
+}
+
+.dtion-t{
+  font-size: 1.5rem !important;
+  margin: 0rem; 
+}
+
+.dtion-p{
+  font-size: 1rem !important;
+  display: flex;
+  border-color: #c5cae9;
+  border-style: dotted;
+  padding: 0.7rem;
+  margin-top: 3rem;
+}
+
+.icn {
+  margin-left: 9rem;
+  margin-top: 2rem;
+}
+
+.sk-t {
+  margin-top: 0rem;
+  padding-top: 2rem;
+}
+
+.lt-t {
+  padding-top: 1rem;
+  color: #7c40ff;
+  font-weight: bold;
+}
+@media (min-width: 500px) { /* si desea, cambiar tamaño de la pantalla en esta línea */
+  nav {
+      height: 100px !important;            /* Cambia el valor de lo que quieres */
+      line-height: 100px !important;       /* Cambia el valor de lo que quieres */
+  }
+}
+
+@media only screen and (min-width: 992px){
+  nav {
+    font-size: 1.2rem;
+  }
+}
