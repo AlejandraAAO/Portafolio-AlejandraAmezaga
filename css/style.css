@@ -1,32 +1,57 @@
 
 nav {
-  background-color: #0f1a26;
-  border-style: none;
+  background-color: #fbf6f4;
+  border-style: ridge #757575;
   height: 100px;
   font-family: 'Karla', sans-serif;
   font-size: 1.5rem;
+  
 }
-
+.hyper {
+  color: #0f1a26 !important;
+}
 .logo {
   margin-top: 3rem;
+  border-radius: 15px;
+  display:block;
+  position: relative;
+}
+
+.esq {
+  position: absolute;
+  left: -5rem;
+  top: 7rem;
+  z-index: 0;
 }
 .init {
- background-color: #0f1a26;
- color: #fbf6f4;
+ background-color:#fbf6f4;
+ color: #0f1a26 ;
+ font-family: "Montserrat" , sans-serif;
+ margin-bottom: 0rem;
+ border-bottom-style: dotted;
+ z-index: 2;
+}
+.img-logo {
+  -webkit-box-shadow: inset 0px 0px 179px 184px rgba(251,246,244,0.5);
+  -moz-box-shadow: inset 0px 0px 179px 184px rgba(251,246,244,0.5);
+  box-shadow: inset 0px 0px 179px 184px rgba(251,246,244,0.5);
+  border-style: dotted;
+}
+.second {
+ background-color: #fbf6f4;
  font-family: "Montserrat" , sans-serif;
  margin-bottom: 0rem;
  border-bottom-style: dotted;
 }
 
-.second {
- background-color: #fbf6f4;
- font-family: "Montserrat" , sans-serif;
-
-}
-
 .dtion-t{
   font-size: 1.5rem !important;
   margin: 0rem; 
+  padding-top: 6rem;
+  z-index: 3;
+  position: relative;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
 }
 
 .dtion-p{
@@ -36,6 +61,7 @@ nav {
   border-style: dotted;
   padding: 0.7rem;
   margin-top: 3rem;
+  letter-spacing:0.2rem;
 }
 
 .icn {
@@ -46,12 +72,31 @@ nav {
 .sk-t {
   margin-top: 0rem;
   padding-top: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
 }
 
 .lt-t {
   padding-top: 1rem;
   color: #7c40ff;
   font-weight: bold;
+}
+
+.third{
+  background-color: #fbf6f4;
+  font-family: "Montserrat" , sans-serif;
+  margin-bottom: 0rem;
+  border-bottom-style: dotted;
+}
+.img-swap {
+  cursor: pointer;
+}
+.fourth {
+  background-color: #fbf6f4;
+  font-family: "Montserrat" , sans-serif;
+};
+.contact {
+  border-style: dotted;
 }
 @media (min-width: 500px) { /* si desea, cambiar tamaño de la pantalla en esta línea */
   nav {
