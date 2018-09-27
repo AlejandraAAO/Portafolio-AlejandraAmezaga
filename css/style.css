@@ -28,6 +28,7 @@ nav {
  color: #0f1a26 ;
  font-family: "Montserrat" , sans-serif;
  margin-bottom: 0rem;
+ padding-bottom: 3rem;
  border-bottom-style: dotted;
  z-index: 2;
 }
@@ -41,6 +42,8 @@ nav {
  background-color: #fbf6f4;
  font-family: "Montserrat" , sans-serif;
  margin-bottom: 0rem;
+ padding-top: 2.5rem;
+ padding-bottom: 3rem;
  border-bottom-style: dotted;
 }
 
@@ -87,6 +90,8 @@ nav {
   font-family: "Montserrat" , sans-serif;
   margin-bottom: 0rem;
   border-bottom-style: dotted;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
 }
 .img-swap {
   cursor: pointer;
@@ -94,6 +99,8 @@ nav {
 .fourth {
   background-color: #fbf6f4;
   font-family: "Montserrat" , sans-serif;
+  padding-top: 2.5rem;
+  padding-bottom: 3rem;
 };
 .contact {
   border-style: dotted;
