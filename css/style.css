@@ -46,7 +46,9 @@ nav {
  padding-bottom: 3rem;
  border-bottom-style: dotted;
 }
-
+.letter {
+  font-size: 1.3rem;
+}
 .dtion-t{
   font-size: 1.5rem !important;
   margin: 0rem; 
@@ -105,15 +107,65 @@ nav {
 .contact {
   border-style: dotted;
 }
+.mini {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+@media (min-width: 320px) {
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 7rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 9rem;
+  }
+}
+@media (min-width: 425px) {
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 10.5rem;
+  }
+}
 @media (min-width: 500px) { /* si desea, cambiar tamaño de la pantalla en esta línea */
   nav {
       height: 100px !important;            /* Cambia el valor de lo que quieres */
       line-height: 100px !important;       /* Cambia el valor de lo que quieres */
+  }
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 3rem;
   }
 }
 
 @media only screen and (min-width: 992px){
   nav {
     font-size: 1.2rem;
+  }
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 3rem;
+  }
+}
+@media only screen and (min-width: 1042px) {
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 5.5rem;
+  }
+}
+@media (min-width: 2560px) {
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 7.5rem;
   }
 }
