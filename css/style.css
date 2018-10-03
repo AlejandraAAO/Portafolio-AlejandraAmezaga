@@ -1,6 +1,6 @@
 
 nav {
-  background-color: #fbf6f4;
+  background-color: #FAD2DD;
   border-style: ridge #757575;
   height: 100px;
   font-family: 'Karla', sans-serif;
@@ -19,11 +19,22 @@ nav {
 
 .esq {
   position: absolute;
-  left: -5rem;
+  left: -3rem;
+  top: 7rem;
+  z-index: 0;
+
+}
+.esqder {
+  position: absolute;
+  right: 0rem;
   top: 7rem;
   z-index: 0;
 }
 .init {
+background-image: url("/img/wall.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
  background-color:#fbf6f4;
  color: #0f1a26 ;
  font-family: "Montserrat" , sans-serif;
@@ -37,6 +48,12 @@ nav {
   -moz-box-shadow: inset 0px 0px 179px 184px rgba(251,246,244,0.5);
   box-shadow: inset 0px 0px 179px 184px rgba(251,246,244,0.5);
   border-style: dotted;
+}
+.cv-but {
+border-radius: 1rem;
+margin: 2rem 10rem; 
+background-color: #c5cae9;
+color: #0f1a26;
 }
 .second {
  background-color: #fbf6f4;
@@ -111,27 +128,270 @@ nav {
   width: 4.5rem;
   height: 4.5rem;
 }
+.page-footer {
+  background-color: #FAD2DD;
+}
+.foot-text {
+  color: #0f1a26;
+}
+
+.skills-bar-container {
+  display: inline;
+  min-width: 300px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  list-style: none;
+}
+.skills-bar-container li {
+  width: 100%; 
+}
+.skills-bar-container li .progressbar-title {
+  color: #0f1a26;
+  font-size: 1rem;
+  padding-top:2.5rem;
+  /* display: inline !important; */
+}
+
+/*  */
+.skills-bar-container li .bar-container {
+  background: #555;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+}
+.skills-bar-container li .bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.skills-bar-container li .bar-container #progress-html {
+  -webkit-animation-name: progress-html;
+  animation-name: progress-html;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.skills-bar-container li .bar-container #progress-css {
+  -webkit-animation-name: progress-css;
+  animation-name: progress-css;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.skills-bar-container li .bar-container #progress-javascript {
+  -webkit-animation-name: progress-javascript;
+  animation-name: progress-javascript;
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+.skills-bar-container li .bar-container #progress-php {
+  -webkit-animation-name: progress-php;
+  animation-name: progress-php;
+  -webkit-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+.skills-bar-container li .bar-container #progress-angular {
+  -webkit-animation-name: progress-angular;
+  animation-name: progress-angular;
+  -webkit-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.progressred {
+  background-color: #c0392b;
+}
+
+.progressblue {
+  background-color: #1199ff;
+}
+
+.progresspurple {
+  background-color: #9b59b6;
+}
+
+.progressorange {
+  background-color: #ffa500;
+}
+
+.progressgreen {
+  background-color: #27ae60;
+}
+.menuicon {
+  font-size: 2.5rem !important;
+  width: auto;
+  color: #0f1a26;
+  padding-top: 1.5rem;
+}
+.skill {
+  font-size: 6rem !important;
+  height: 6rem !important;
+  width: auto;
+}
+@-webkit-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-webkit-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-webkit-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-webkit-keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-moz-keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-moz-keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@-moz-keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@-moz-keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@-moz-keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes progress-css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes progress-javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes progress-php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+@keyframes progress-angular {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
 @media (min-width: 320px) {
-  .mini {
+  .mini, .down {
     width: 4.5rem;
     height: 4.5rem;
     margin-left: 7rem;
   }
+  .cv-but { 
+   margin: 2rem 6rem;
+  }
 }
 
 @media (min-width: 375px) {
-  .mini {
+  .mini, .down {
     width: 4.5rem;
     height: 4.5rem;
     margin-left: 9rem;
   }
+  .cv-but { 
+    margin: 2rem 8rem;
+   }
 }
 @media (min-width: 425px) {
-  .mini {
+  .mini, .down {
     width: 4.5rem;
     height: 4.5rem;
     margin-left: 10.5rem;
   }
+  .cv-but { 
+    margin: 2rem 9rem;
+   }
 }
 @media (min-width: 500px) { /* si desea, cambiar tamaño de la pantalla en esta línea */
   nav {
@@ -141,26 +401,77 @@ nav {
   .mini {
     width: 4.5rem;
     height: 4.5rem;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
   }
+  .down {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 9rem;
+  }
+  .menuicon {
+    font-size: 2.5rem !important;
+    width: auto;
+    color: #0f1a26;
+    padding-top: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 4rem;
+  }
+  .dow {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 9rem;
+  }
+  .cv-but { 
+    margin: 2rem 7.5rem;
+   }
 }
 
 @media only screen and (min-width: 992px){
   nav {
     font-size: 1.2rem;
   }
-  .mini {
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-left: 3rem;
-  }
 }
-@media only screen and (min-width: 1042px) {
+@media (min-width: 992px) {
+.mini,.down {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-left: 3rem;
+}
+
+}
+@media (min-width: 1024px) {
   .mini {
     width: 4.5rem;
     height: 4.5rem;
-    margin-left: 5.5rem;
+    margin-left: 5rem;
   }
+  .down{
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 9rem;
+  }
+  .cv-but { 
+    margin: 2rem 8.5rem;
+   }
+}
+@media (min-width: 1440px) {
+  .mini {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 8rem;
+  }
+  .down {
+    margin-left: 14rem;
+  }
+  .cv-but { 
+    margin: 2rem 12.5rem;
+   }
 }
 @media (min-width: 2560px) {
   .mini {
@@ -168,4 +479,5 @@ nav {
     height: 4.5rem;
     margin-left: 7.5rem;
   }
+  
 }

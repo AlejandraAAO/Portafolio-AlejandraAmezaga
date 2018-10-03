@@ -7,12 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Karla|Montserrat" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script> 
   </head>
   <body>
     <div class="navbar-fixed">
       <nav class="z-depth-4">
           <div class="nav-wrapper">
             <a href="#" class="brand-logo"><img class="responsive-img img-logo" src="img/logo.png"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons menuicon">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#aboutme" class="active hyper letter">Sobre mí</a></li>
               <li><a href="#skills" class="hyper letter">Habilidades</a></li>
@@ -21,7 +23,13 @@
             </ul>
           </div>
         </nav>
-    </div>  
+    </div> 
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="#aboutme">Home</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#proyects">Proyectos</a></li>
+      <li><a href="#contact">Contáctame</a></li>
+    </ul> 
 
             
     <div class="row init scrollspy" id="aboutme">
@@ -32,7 +40,6 @@
                  </h6>
                  <div class="col s12 m6 offset-m3">    
                   <img class="responsive-img logo " src="img/fotorecortada.jpg">
-                  <img class="responsive-img esq" src="img/blanco.png">
                   <h6 class="flow-text center-align dtion-p">
                     Estudié psicología, y en el camino me incliné por el mundo tech.  
                     Mi capacidad de autoaprendizaje la desarrollé a lo largo de mi formación académica;
@@ -41,6 +48,7 @@
                     Aspiro a convertirme en un referente para las mujeres que deciden entrar en el mundo
                     de la tecnología, a ser una FullStack  y  UI Developer.
                 </h6>
+                <a class="waves-effect waves-light btn cv-but" href="https://drive.google.com/file/d/1SgyUNOsxs2z4GMCG5ZfAE7jMTYPXzt6S/view?usp=sharing" target="_blank">Ver CV</a>
                 </div>  
                 
           </div>
@@ -67,18 +75,57 @@
                       iniciativa y formar un equipo con las personas que 
                       trabajan conmigo.
                     </p>
-                    <p class="center-align lt-t">Lo que aprendí:</p>
-                    <ul class="center-align">
-                      <li>Adaptación</li>
-                      <li>Proactividad</li>
-                      <li>Confianza</li>
-                      <li>Integridad</li>
-                      <li>Compromiso</li>
-                      <li>Responsabilidad</li>
-                      <li>Honestidad</li>
-                      <li>Compañerismo</li>
-                      <li>Resiliencia</li>
-                      <li>Autocontrol</li>
+                    <p class="center-align lt-t">Lo que aporto al equipo:</p>
+                    <ul class="skills-bar-container">
+                      <li>
+                        <div class="progressbar-title">
+                          <span>Integridad</span>&nbsp &nbsp 
+                          <span class="percent" id="html-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progressred" id="progress-html"></span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="progressbar-title">
+                          <span>Compromiso</span>&nbsp &nbsp
+                          <span class="percent" id="css-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progressblue" id="progress-css"></span>
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="progressbar-title">
+                          <span>Actitud Positiva</span>&nbsp &nbsp
+                          <span class="percent" id="javascript-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progresspurple" id="progress-javascript"></span>
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="progressbar-title">
+                          <span>Resiliencia</span>&nbsp &nbsp
+                          <span class="percent" id="php-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progressorange" id="progress-php"></span>
+                        </div>
+                      </li>
+                      
+                      <li>
+                        <div class="progressbar-title">
+                          <span>Proactividad</span>&nbsp &nbsp
+                          <span class="percent" id="angular-pourcent"></span>
+                        </div>
+                        <div class="bar-container">
+                          <span class="progressbar progressgreen" id="progress-angular"></span>
+                        </div>
+                      </li>
+                      
                     </ul>
 
                   </div>
@@ -94,19 +141,17 @@
                       permiten hacer cambios en el momento.
                     </p>
                     <p class="center-align lt-t">Mis herramientas:</p>
-                    <ul class="center-align">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Materialize</li>
-                        <li>JavaScript (ES6)</li>
-                        <li>AJAX JSON</li>
-                        <li>Firebase</li>
-                        <li>Node JS</li>
-                        <li>Unit Testing (Mocha)</li>
-                        <li>Github-GithubPages</li>
-                        <li>CLI (Terminal)</li>
-                        <li>TeamViewer</li> 
-                        <li>Tablero Kanban</li> 
+                    <ul class="center-align">&nbsp &nbsp
+                      <i class="fab fa-js-square skill"></i>&nbsp &nbsp
+                      <i class="fab fa-node skill"></i>&nbsp &nbsp
+                      <i class="fab fa-git-square skill"></i>&nbsp &nbsp
+                      <i class="fab fa-github-square skill"></i>&nbsp &nbsp
+                      <img class="responsive-img skill" src="img/fireba.png">&nbsp &nbsp
+                      <img class="responsive-img skill" src="img/json.png">&nbsp &nbsp
+                      <img class="responsive-img skill" src="img/mate.png">&nbsp &nbsp
+                      <img class="responsive-img skill" src="img/mocha.svg">&nbsp &nbsp
+                      
+
                       </ul>
                   </div>
                 </div>
@@ -132,7 +177,7 @@
                         </div>
                         <div class="card-content">
                           <span class="card-title activator grey-text text-darken-4">Data
-                            Dashboard<i class="material-icons right">more_vert</i></span>
+                            Dashboard<i class="material-icons right">help_outline</i></span>
                           <a href="https://github.com/AlejandraAAO/lim-2018-05-bc-core-pm-datadashboard" target="_blank"><p>Repositorio</p></a>
                           <a href="https://alejandraaao.github.io/lim-2018-05-bc-core-pm-datadashboard/src" target="_blank"><p>Demo</p></a>
                         </div>
@@ -155,7 +200,7 @@
                             <img alt="video gif animation activator" class="img-swap on" src="gif/foodmap.gif">
                           </div>
                           <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">FoodMap<i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4">FoodMap<i class="material-icons right">help_outline</i></span>
                             <a href="https://github.com/AlejandraAAO/lim-2018-01-foodmap" target="_blank"><p>Repositorio</p></a>
                             <a href="https://alejandraaao.github.io/lim-2018-01-foodmap/" target="_blank"><p>Demo</p></a>
                           </div>
@@ -178,7 +223,7 @@
                             <img alt="video gif animation activator" class="img-swap on" src="gif/warayana.gif">
                           </div>
                           <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Warayana<i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4">Warayana<i class="material-icons right">help_outline</i></span>
                             <a href="https://github.com/AlejandraAAO/lim-2018-05-bc-core-pm-socialnetwork" target="_blank"><p>Repositorio</p></a>
                             <a href="https://alejandraaao.github.io/lim-2018-05-bc-core-pm-socialnetwork/" target="_blank"><p>Demo</p></a>
                           </div>
@@ -269,37 +314,60 @@
                     Redes y Contacto
                     </h4>
                     <p class="center-align">
-                      Si quieres saber mas acerca de mí y de mis proyectos, contactame y reunamonos.
+                      Si quieres saber mas acerca de mí y de mis proyectos visita mis redes: 
                     </p>
                   </div>
                   <div class="row">
-                    <div class="col s12 m3 contact">
+                    <div class="col s12 m4 contact">
                       <a href="https://drive.google.com/file/d/1SgyUNOsxs2z4GMCG5ZfAE7jMTYPXzt6S/view?usp=sharing" target="_blank">
                       <p class="center-align">Descarga mi CV</p> 
-                      <img src="img/cv.svg" class="responsive-img mini" alt="curriculum"></a>
+                      <img src="img/cv.svg" class="responsive-img mini" alt="curriculum">
                       </a>
                     </div>
-                    <div class="col s12 m3 contact">
+                    <div class="col s12 m4 contact">
                       <a href="https://github.com/AlejandraAAO" target="_blank">
                         <p class="center-align">Conoce mis proyectos </p>
                         <img src="img/github.svg"class="responsive-img mini" alt="github">
                       </a>
                     </div>
-                    <div class="col s12 m3 contact">
+                    <div class="col s12 m4 contact">
                       <a href="mailto:amezaga.alejandra@outlook.com">
-                        <p class="center-align">Mi email</p> 
-                        <img src="img/mail.svg" class="responsive-img mini" alt="email">
+                        <p class="center-align">Perfil de Linkedin</p> 
+                        <img src="img/in.png" class="responsive-img mini" alt="linkedin">
                       </a>
                     </div>
-                    <div class="col s12 m3 contact">
-                      <p class="center-align blue-text">925659427</p>
-                      <img src="img/shake.svg" class="responsive-img mini" alt="telephone">
+                    
+                  </div>  
+                    <div class="row">
+                      <p class="center-align">
+                        O ponte en contacto directamente conmigo. 
+                      </p>
                     </div>
-                  </div>
-              </div> 
-    </div> 
+                    <div class="row">
+                    <div class="col s12 m6 contact">
+                      <a href="mailto:amezaga.alejandra@outlook.com">
+                        <p class="center-align">amezaga.alejandra@outlook.com</p> 
+                        <img src="img/mail.svg" class="responsive-img down" alt="email">
+                      </a>
+                    </div>
+                    <div class="col s12 m6 contact">
+                      <p class="center-align blue-text">925659427</p>
+                      <img src="img/shake.svg" class="responsive-img down" alt="telephone">
+                    </div>
+                  </div>  
+                  
+              
     
-    
+                </div> 
+    </div>
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container foot-text">
+        © 2018 Alejandra Amezaga
+        
+        </div>
+      </div>
+    </footer>    
 
 
 
