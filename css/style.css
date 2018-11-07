@@ -116,6 +116,7 @@ color: #0f1a26;
 .img-swap {
   cursor: pointer;
 }
+
 .fourth {
   background-color: #fbf6f4;
   font-family: "Montserrat" , sans-serif;
@@ -137,101 +138,6 @@ color: #0f1a26;
   color: #0f1a26;
 }
 
-.skills-bar-container {
-  display: inline;
-  min-width: 300px;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  list-style: none;
-}
-.skills-bar-container li {
-  width: 100%; 
-}
-.skills-bar-container li .progressbar-title {
-  color: #0f1a26;
-  font-size: 1rem;
-  padding-top:2.5rem;
-  /* display: inline !important; */
-}
-
-/*  */
-.skills-bar-container li .bar-container {
-  background: #555;
-  position: relative;
-  width: 100%;
-  height: 5px;
-  
-  
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-}
-.skills-bar-container li .bar-container .progressbar {
-  position: absolute;
-  width: 0%;
-  height: 100%;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-.skills-bar-container li .bar-container #progress-html {
-  -webkit-animation-name: progress-html;
-  animation-name: progress-html;
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-}
-.skills-bar-container li .bar-container #progress-css {
-  -webkit-animation-name: progress-css;
-  animation-name: progress-css;
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
-}
-.skills-bar-container li .bar-container #progress-javascript {
-  -webkit-animation-name: progress-javascript;
-  animation-name: progress-javascript;
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
-}
-.skills-bar-container li .bar-container #progress-php {
-  -webkit-animation-name: progress-php;
-  animation-name: progress-php;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
-}
-.skills-bar-container li .bar-container #progress-angular {
-  -webkit-animation-name: progress-angular;
-  animation-name: progress-angular;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-}
-
-.progressred {
-  background-color: #c0392b;
-}
-
-.progressblue {
-  background-color: #1199ff;
-}
-
-.progresspurple {
-  background-color: #9b59b6;
-}
-
-.progressorange {
-  background-color: #ffa500;
-}
-
-.progressgreen {
-  background-color: #27ae60;
-}
 .menuicon {
   font-size: 2.5rem !important;
   width: auto;
@@ -243,127 +149,9 @@ color: #0f1a26;
   height: 6rem !important;
   width: auto;
 }
-@-webkit-keyframes progress-html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
+.container-skill {
+  margin-top: 1.5rem;
 }
-@-webkit-keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@-webkit-keyframes progress-javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@-webkit-keyframes progress-php {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@-webkit-keyframes progress-angular {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@-moz-keyframes progress-html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@-moz-keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@-moz-keyframes progress-javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@-moz-keyframes progress-php {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@-moz-keyframes progress-angular {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes progress-html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-@keyframes progress-css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 90%;
-  }
-}
-@keyframes progress-javascript {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes progress-php {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@keyframes progress-angular {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-
 @media (min-width: 320px) {
   .mini, .down {
     width: 4.5rem;
